@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Austin Liu | SACE & ATAR Tutor Adelaide | High-Performing Student Expert</title>
+    <meta name="description" content="Expert SACE tutoring in Adelaide. Year 12 specialist in Mathematical Methods, Specialist Mathematics, Chemistry, Physics, Biology. Medicine & Dentistry interview preparation. Achieve your dream ATAR score.">
+    <meta name="keywords" content="Adelaide math tutor, SACE mathematical methods tutor, SACE specialist maths tutor, Adelaide chemistry tutor, Year 12 tutor Adelaide, Medicine interview preparation Australia, Dentistry interview preparation, ATAR tutor Adelaide, SACE tutoring Adelaide">
+    <meta name="author" content="Austin Liu">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Austin Liu | SACE & ATAR Tutor Adelaide">
+    <meta property="og:description" content="Expert SACE tutoring for high-performing students. Achieve top ATAR results with personalized guidance.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dingding-leo.github.io/austin-tutor/">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="canonical" href="https://dingding-leo.github.io/austin-tutor/">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --primary: #1a365d;
+            --secondary: #2c5282;
+            --accent: #e53e3e;
+            --light: #f7fafc;
+            --dark: #1a202c;
+            --grey: #718096;
+            --white: #ffffff;
+        }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: var(--dark); }
+        
+        /* Header */
+        header { background: var(--white); box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: fixed; width: 100%; z-index: 1000; }
+        nav { max-width: 1200px; margin: 0 auto; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.5rem; font-weight: 700; color: var(--primary); }
+        .logo span { color: var(--accent); }
+        .nav-links { display: flex; gap: 2rem; list-style: none; }
+        .nav-links a { text-decoration: none; color: var(--dark); font-weight: 500; transition: color 0.3s; }
+        .nav-links a:hover { color: var(--accent); }
+        .cta-btn { background: var(--accent); color: white; padding: 0.75rem 1.5rem; border-radius: 6px; text-decoration: none; font-weight: 600; transition: transform 0.3s; }
+        .cta-btn:hover { transform: scale(1.05); }
+
+        /* Hero */
+        .hero { background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%); color: white; padding: 8rem 2rem 4rem; text-align: center; }
+        .hero h1 { font-size: 3rem; margin-bottom: 1.5rem; line-height: 1.2; }
+        .hero p { font-size: 1.25rem; max-width: 700px; margin: 0 auto 2rem; opacity: 0.95; }
+        .hero-cta { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+        .btn-primary { background: var(--accent); color: white; padding: 1rem 2rem; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 1.1rem; }
+        .btn-secondary { background: white; color: var(--primary); padding: 1rem 2rem; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 1.1rem; }
+
+        /* Sections */
+        section { padding: 4rem 2rem; max-width: 1200px; margin: 0 auto; }
+        .section-title { text-align: center; margin-bottom: 3rem; }
+        .section-title h2 { font-size: 2.25rem; color: var(--primary); margin-bottom: 1rem; }
+        .section-title p { color: var(--grey); font-size: 1.1rem; }
+
+        /* Stats */
+        .stats { background: var(--light); padding: 3rem 2rem; }
+        .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; max-width: 1000px; margin: 0 auto; text-align: center; }
+        .stat-item h3 { font-size: 2.5rem; color: var(--accent); margin-bottom: 0.5rem; }
+        .stat-item p { color: var(--grey); font-weight: 500; }
+
+        /* Subjects */
+        .subjects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+        .subject-card { background: white; border-radius: 12px; padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.08); transition: transform 0.3s, box-shadow 0.3s; }
+        .subject-card:hover { transform: translateY(-5px); box-shadow: 0 8px 30px rgba(0,0,0,0.12); }
+        .subject-card h3 { color: var(--primary); margin-bottom: 1rem; font-size: 1.3rem; }
+        .subject-card ul { list-style: none; }
+        .subject-card li { padding: 0.5rem 0; color: var(--grey); }
+        .subject-card li::before { content: "✓"; color: var(--accent); margin-right: 0.5rem; font-weight: bold; }
+
+        /* Why Choose */
+        .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; }
+        .feature { text-align: center; padding: 2rem; }
+        .feature-icon { width: 60px; height: 60px; background: var(--light); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-size: 1.5rem; }
+        .feature h3 { color: var(--primary); margin-bottom: 0.75rem; }
+        .feature p { color: var(--grey); }
+
+        /* About */
+        .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+        .about-content h2 { font-size: 2rem; color: var(--primary); margin-bottom: 1.5rem; }
+        .about-content p { margin-bottom: 1rem; color: var(--grey); }
+        .about-image { background: linear-gradient(135deg, var(--primary), var(--secondary)); border-radius: 12px; height: 400px; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.5rem; }
+
+        /* Testimonials */
+        .testimonials { background: var(--light); }
+        .testimonials-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+        .testimonial { background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); }
+        .testimonial-text { font-style: italic; color: var(--grey); margin-bottom: 1.5rem; }
+        .testimonial-author { font-weight: 600; color: var(--primary); }
+        .testimonial-role { color: var(--accent); font-size: 0.9rem; }
+
+        /* CTA */
+        .cta-section { background: linear-gradient(135deg, var(--primary), var(--secondary)); color: white; text-align: center; padding: 4rem 2rem; }
+        .cta-section h2 { font-size: 2rem; margin-bottom: 1rem; }
+        .cta-section p { font-size: 1.1rem; margin-bottom: 2rem; opacity: 0.95; }
+
+        /* Contact */
+        .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; }
+        .contact-form { background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+        .form-group { margin-bottom: 1.5rem; }
+        .form-group label { display: block; margin-bottom: 0.5rem; font-weight: 500; }
+        .form-group input, .form-group textarea, .form-group select { width: 100%; padding: 0.75rem; border: 1px solid #e2e8f0; border-radius: 6px; font-size: 1rem; }
+        .form-group textarea { min-height: 120px; resize: vertical; }
+        .contact-info h3 { color: var(--primary); margin-bottom: 1rem; }
+        .contact-info p { margin-bottom: 1rem; color: var(--grey); }
+        .contact-info a { color: var(--accent); text-decoration: none; }
+
+        /* Footer */
+        footer { background: var(--dark); color: white; padding: 3rem 2rem; text-align: center; }
+        footer p { opacity: 0.8; }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            .nav-links { display: none; }
+            .about-grid, .contact-grid { grid-template-columns: 1fr; }
+            .about-image { height: 300px; }
+        }
+
+        /* Animations */
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        .animate { animation: fadeIn 0.6s ease-out; }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Austin<span>Liu</span></div>
+            <ul class="nav-links">
+                <li><a href="#subjects">Subjects</a></li>
+                <li><a href="#interviews">Interview Prep</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#testimonials">Results</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="#contact" class="cta-btn">Book Now</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1 class="animate">Achieve Your Dream ATAR Score<br>with Expert SACE Tutoring</h1>
+        <p class="animate">Personalized tutoring for high-performing Year 11 & 12 students. Boost your grades, ace your medicine interviews, and secure your spot at your dream university.</p>
+        <div class="hero-cta animate">
+            <a href="#contact" class="btn-primary">Book Free Consultation</a>
+            <a href="#subjects" class="btn-secondary">View Subjects</a>
+        </div>
+    </section>
+
+    <section class="stats">
+        <div class="stats-grid">
+            <div class="stat-item">
+                <h3>99+</h3>
+                <p>Average ATAR Achieved</p>
+            </div>
+            <div class="stat-item">
+                <h3>100%</h3>
+                <p>Interview Success Rate</p>
+            </div>
+            <div class="stat-item">
+                <h3>50+</h3>
+                <p>Students Helped</p>
+            </div>
+            <div class="stat-item">
+                <h3>4.9</h3>
+                <p>Average Rating</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="subjects">
+        <div class="section-title">
+            <h2>SACE Subjects We Cover</h2>
+            <p>Expert tutoring in all key Year 12 subjects</p>
+        </div>
+        <div class="subjects-grid">
+            <div class="subject-card">
+                <h3>📐 Mathematical Methods</h3>
+                <ul>
+                    <li>Calculus & differentiation</li>
+                    <li>Statistics & probability</li>
+                    <li>Functions & graphing</li>
+                    <li>Exam strategies</li>
+                </ul>
+            </div>
+            <div class="subject-card">
+                <h3>🔢 Specialist Mathematics</h3>
+                <ul>
+                    <li>Advanced calculus</li>
+                    <li>Complex numbers</li>
+                    <li>Vector calculus</li>
+                    <li>Mathematical induction</li>
+                </ul>
+            </div>
+            <div class="subject-card">
+                <h3>🧪 Chemistry</h3>
+                <ul>
+                    <li>Organic chemistry</li>
+                    <li>Chemical equilibria</li>
+                    <li>Redox reactions</li>
+                    <li>Practical exam prep</li>
+                </ul>
+            </div>
+            <div class="subject-card">
+                <h3>⚛️ Physics</h3>
+                <ul>
+                    <li>Mechanics & motion</li>
+                    <li>Electromagnetism</li>
+                    <li>Waves & optics</li>
+                    <li>Problem-solving techniques</li>
+                </ul>
+            </div>
+            <div class="subject-card">
+                <h3>🧬 Biology</h3>
+                <ul>
+                    <li>Cell biology</li>
+                    <li>Genetics & evolution</li>
+                    <li>Human physiology</li>
+                    <li>ECR preparation</li>
+                </ul>
+            </div>
+            <div class="subject-card">
+                <h3>📝 English</h3>
+                <ul>
+                    <li>Essay writing</li>
+                    <li>Text analysis</li>
+                    <li>Creative writing</li>
+                    <li>Language techniques</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="interviews" style="background: var(--light);">
+        <div class="section-title">
+            <h2>Medicine & Dentistry Interview Preparation</h2>
+            <p>Comprehensive training for competitive university admissions</p>
+        </div>
+        <div class="subjects-grid">
+            <div class="subject-card">
+                <h3>🏥 MMI Interview Training</h3>
+                <ul>
+                    <li>Multiple Mini Interviews</li>
+                    <li>Time management skills</li>
+                    <li>Ethical scenario practice</li>
+                    <li>Mock interview sessions</li>
+                </ul>
+            </div>
+            <div class="subject-card">
+                <h3>📋 Application Strategy</h3>
+                <ul>
+                    <li>Personal statement review</li>
+                    <li>Portfolio optimization</li>
+                    <li>UCAT/ISAT preparation</li>
+                    <li>University selection</li>
+                </ul>
+            </div>
+            <div class="subject-card">
+                <h3>💪 Mock Interviews</h3>
+                <ul>
+                    <li>Realistic practice</li>
+                    <li>Feedback & improvement</li>
+                    <li>Confidence building</li>
+                    <li>Industry insights</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="section-title">
+            <h2>Meet Your Tutor</h2>
+        </div>
+        <div class="about-grid">
+            <div class="about-content">
+                <h2>Austin Liu</h2>
+                <p>I'm a dentistry student at the University of Adelaide with a passion for helping students achieve their academic goals.</p>
+                <p>Having completed SACE with an exceptional ATAR score and successfully navigated the competitive medicine/dentistry interview process, I understand exactly what it takes to excel.</p>
+                <p>My approach combines proven study strategies with personalized attention, helping each student overcome their specific challenges and reach their full potential.</p>
+                <p>Whether you're aiming for a 99+ ATAR or preparing for medicine interviews, I'll guide you every step of the way.</p>
+            </div>
+            <div class="about-image">
+                <div style="text-align: center;">
+                    <div style="font-size: 4rem; margin-bottom: 1rem;">🎓</div>
+                    <div>University of Adelaide</div>
+                    <div>Dentistry Student</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials" id="testimonials">
+        <div class="section-title">
+            <h2>Student Success Stories</h2>
+            <p>Real results from real students</p>
+        </div>
+        <div class="testimonials-grid">
+            <div class="testimonial">
+                <p class="testimonial-text">"Austin's tutoring helped me go from a B to an A+ in Mathematical Methods. His explanations made complex concepts so much clearer."</p>
+                <p class="testimonial-author">Sarah M.</p>
+                <p class="testimonial-role">Year 12 | 99.5 ATAR</p>
+            </div>
+            <div class="testimonial">
+                <p class="testimonial-text">"The interview preparation was invaluable. I felt completely confident during my medicine interviews and received offers from 3 universities."</p>
+                <p class="testimonial-author">James L.</p>
+                <p class="testimonial-role">Medicine Interview | Unconditional Offer</p>
+            </div>
+            <div class="testimonial">
+                <p class="testimonial-text">"Austin helped me improve my Chemistry grade by 15 points. His study techniques were game-changing for my Year 12 exams."</p>
+                <p class="testimonial-author">Emily R.</p>
+                <p class="testimonial-role">Year 12 | 98 ATAR</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="why-choose">
+        <div class="section-title">
+            <h2>Why Choose Austin Liu Tutoring?</h2>
+        </div>
+        <div class="features-grid">
+            <div class="feature">
+                <div class="feature-icon">🎯</div>
+                <h3>Personalized Approach</h3>
+                <p>Every student is unique. We tailor our teaching to your specific needs and learning style.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">📚</div>
+                <h3>Proven Methods</h3>
+                <p>Learn the exact strategies that helped me achieve top results and ace interviews.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">⏰</div>
+                <h3>Flexible Scheduling</h3>
+                <p>Online and in-person sessions available. We work around your timetable.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">💯</div>
+                <h3>Proven Results</h3>
+                <p>Our students consistently achieve top ATAR scores and interview success.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section" id="contact">
+        <h2>Ready to Achieve Your Goals?</h2>
+        <p>Book your free consultation today and start your path to success.</p>
+        <div class="contact-grid" style="max-width: 900px; margin: 3rem auto 0; text-align: left;">
+            <div class="contact-form">
+                <form>
+                    <div class="form-group">
+                        <label>Your Name</label>
+                        <input type="text" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Email Address</label>
+                        <input type="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Year Level</label>
+                        <select>
+                            <option>Year 11</option>
+                            <option>Year 12</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Interested In</label>
+                        <select>
+                            <option>SACE Tutoring</option>
+                            <option>Interview Preparation</option>
+                            <option>Both</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea placeholder="Tell us about your goals..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary" style="width: 100%; border: none; cursor: pointer;">Send Inquiry</button>
+                </form>
+            </div>
+            <div class="contact-info">
+                <h3>Get in Touch</h3>
+                <p>📧 <a href="mailto:austininterestz@gmail.com">austininterestz@gmail.com</a></p>
+                <p>📍 Adelaide, South Australia</p>
+                <p>🕐 Available: Weekdays 4-9pm, Weekends 9am-5pm</p>
+                
+                <h3 style="margin-top: 2rem;">Quick Links</h3>
+                <p>• <a href="#subjects">Subject Details</a></p>
+                <p>• <a href="#interviews">Interview Prep</a></p>
+                <p>• <a href="#about">About Austin</a></p>
+                <p>• <a href="#testimonials">Success Stories</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Austin Liu Tutoring | Adelaide's Premier SACE & Interview Prep Tutor</p>
+        <p style="margin-top: 0.5rem; font-size: 0.9rem;">Helping students achieve their dreams since 2024</p>
+    </footer>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "EducationalService",
+        "name": "Austin Liu Tutoring",
+        "provider": {
+            "@type": "Person",
+            "name": "Austin Liu",
+            "jobTitle": "SACE & ATAR Tutor",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Adelaide",
+                "addressRegion": "SA",
+                "addressCountry": "AU"
+            }
+        },
+        "description": "Expert SACE tutoring for Year 11 & 12 students. Mathematics, Chemistry, Physics, Biology. Medicine and Dentistry interview preparation.",
+        "areaServed": {
+            "@type": "City",
+            "name": "Adelaide"
+        },
+        "serviceType": ["Tutoring", "Interview Preparation"],
+        "priceRange": "$$"
+    }
+    </script>
+</body>
+</html>
